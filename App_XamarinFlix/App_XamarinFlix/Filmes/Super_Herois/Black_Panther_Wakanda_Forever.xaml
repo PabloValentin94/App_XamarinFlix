@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App_XamarinFlix.Filmes.Super_Herois.Black_Panther_Wakanda_Forever"
+             BackgroundColor="#2f2f30">
+    
+    <ContentPage.Content>
+
+        <StackLayout Orientation="Vertical">
+
+            <Image x:Name="Logo" Style="{ StaticResource LogoNoFilme }"/>
+
+            <Grid>
+
+                <Grid.ColumnDefinitions>
+
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+
+                    <RowDefinition Height="300"/>
+                    <RowDefinition Height="*"/>
+
+                </Grid.RowDefinitions>
+
+                <WebView Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2"
+                         x:Name="Visualizador"
+                         Source="https://www.youtube.com/embed/qZuQc-GvRlk"
+                         VerticalOptions="FillAndExpand"
+                         BackgroundColor="#2f2f30"/>
+
+                <StackLayout Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2">
+
+                    <ScrollView>
+
+                        <Grid>
+
+                            <Grid.ColumnDefinitions>
+
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+
+                            </Grid.ColumnDefinitions>
+
+                            <Grid.RowDefinitions>
+
+                                <RowDefinition Height="300"/>
+                                <RowDefinition Height="*"/>
+
+                            </Grid.RowDefinitions>
+
+                            <Image x:Name="Poster" Grid.Column="0" Grid.Row="0" Aspect="AspectFill"/>
+
+                            <StackLayout Grid.Column="1" Grid.Row="0" VerticalOptions="Center">
+
+                                <Label Text="Título:" Style="{ StaticResource LabelTextoVermelho }"/>
+
+                                <Label Text="Black Panther: " Style="{ StaticResource LabelTextoBranco }"/>
+                                <Label Text="Wakanda Forever" Style="{ StaticResource LabelTextoBranco }"/>
+
+                                <Label Text="Data de Lançamento:" Style="{ StaticResource LabelTextoVermelho }"/>
+
+                                <Label Text="10/11/2022" Style="{ StaticResource LabelTextoBranco }"/>
+
+                                <Label Text="Direção:" Style="{ StaticResource LabelTextoVermelho }"/>
+
+                                <Label Text="Ryan Coogler" Style="{ StaticResource LabelTextoBranco }"/>
+
+                            </StackLayout>
+
+                            <StackLayout Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" Padding="10">
+
+                                <Label Text="Sinopse" Style="{ StaticResource LabelTextoVermelho }"/>
+
+                                <Label x:Name="Sinopse_Filme" Style="{ StaticResource LabelTextoBranco }"/>
+
+                            </StackLayout>
+
+                        </Grid>
+
+                    </ScrollView>
+
+                </StackLayout>
+
+
+            </Grid>
+
+        </StackLayout>
+
+    </ContentPage.Content>
+    
+</ContentPage>

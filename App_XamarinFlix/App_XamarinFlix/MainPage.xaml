@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App_XamarinFlix.MainPage"
+             Title=" Etec App Xamarin_Flix"
+             BackgroundColor="#2f2f30">
+
+    <StackLayout>
+
+        <Image x:Name="Logo" HeightRequest="150"/>
+
+        <ScrollView>
+
+            <Grid RowSpacing="20" ColumnSpacing="10" Padding="10">
+
+                <Grid.ColumnDefinitions>
+
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+
+                </Grid.RowDefinitions>
+
+                <Button Grid.Row="0" Grid.Column="0" Text="Super-Heróis"
+                        Style="{StaticResource Button_Menu_Categorias}"
+                        Clicked="btn_open_super_herois" />
+
+                <Button Grid.Row="0" Grid.Column="1" Text="Ficção Científica"
+                        Style="{StaticResource Button_Menu_Categorias}"
+                        Clicked="btn_open_ficcao_cientifica"/>
+
+                <Button Grid.Row="1" Grid.Column="0" Text="Comédia"
+                        Style="{StaticResource Button_Menu_Categorias}"                
+                        Clicked="btn_open_comedia"/>
+
+            </Grid>
+
+        </ScrollView>
+
+    </StackLayout>
+
+</ContentPage>

@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App_XamarinFlix.App">
+    
+    <Application.Resources>
+
+        <Style x:Key="Button_Menu_Categorias" TargetType="Button">
+            
+            <Setter Property="BackgroundColor" Value="#e80000"/>
+            <Setter Property="TextColor" Value="#000"/>
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="BorderRadius" Value="10"/>
+            <Setter Property="HorizontalOptions" Value="Fill"/>
+            <Setter Property="VerticalOptions" Value="Fill"/>
+            
+        </Style>
+
+
+
+        <Style x:Key="LabelTextoBranco" TargetType="Label">
+            
+            <Setter Property="TextColor" Value="#FFF"/>
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="HorizontalOptions" Value="Center"/>
+            
+        </Style>
+
+       
+
+        <Style x:Key="LabelTextoVermelho" TargetType="Label">
+
+            <Setter Property="TextColor" Value="#e80000"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="FontAttributes" Value="Bold"/>
+            <Setter Property="HorizontalOptions" Value="Center"/>
+
+        </Style>
+
+        <Style x:Key="ButtonPosters" TargetType="ImageButton">
+
+            <Setter Property="Aspect" Value="Fill"/>
+            <Setter Property="BorderColor" Value="#555"/>
+            <Setter Property="BorderWidth" Value="2"/>
+
+        </Style>
+
+        <Style x:Key="LogoNaListaDePosters" TargetType="Image">
+
+            <Setter Property="HeightRequest" Value="80"/>
+
+        </Style>
+
+        <Style x:Key="LogoNoFilme" TargetType="Image">
+
+            <Setter Property="HeightRequest" Value="50"/>
+
+        </Style>
+
+    </Application.Resources>
+    
+</Application>
