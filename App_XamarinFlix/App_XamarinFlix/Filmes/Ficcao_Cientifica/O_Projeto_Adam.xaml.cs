@@ -24,10 +24,10 @@ namespace App_XamarinFlix.Filmes.Ficcao_Cientifica
             /*var htmlSource = new HtmlWebViewSource();
 
             htmlSource.Html = @"<iframe width='560' height='315' 
-                                src='https://www.youtube.com/embed/miycJHABS1w' 
-                                title='YouTube video player' frameborder='0' allow='accelerometer; 
-                                autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' 
-                                allowfullscreen></iframe>";
+                                 src='https://www.youtube.com/embed/nrlmJv6X0q4' 
+                                 title='YouTube video player' frameborder='0' allow='accelerometer; 
+                                 autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' 
+                                 allowfullscreen></iframe>";
 
             Visualizador.Source = htmlSource;*/
 
