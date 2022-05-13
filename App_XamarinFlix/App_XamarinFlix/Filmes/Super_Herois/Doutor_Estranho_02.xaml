@@ -58,8 +58,8 @@
 
                                 <Label Text="Título:" Style="{ StaticResource LabelTextoVermelho }"/>
 
-                                <Label Text="Doutor Estranho no " Style="{ StaticResource LabelTextoBranco }"/>
-                                <Label Text="Multiverso " Style="{ StaticResource LabelTextoBranco }"/>
+                                <Label Text="Doutor Estranho " Style="{ StaticResource LabelTextoBranco }"/>
+                                <Label Text="no Multiverso " Style="{ StaticResource LabelTextoBranco }"/>
                                 <Label Text="da Loucura" Style="{ StaticResource LabelTextoBranco }"/>
 
                                 <Label Text="Data de Lançamento:" Style="{ StaticResource LabelTextoVermelho }"/>
