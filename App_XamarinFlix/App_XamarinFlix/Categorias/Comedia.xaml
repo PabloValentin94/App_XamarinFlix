@@ -10,7 +10,7 @@
 
             <Image x:Name="Logo" Style="{ StaticResource LogoNaListaDePosters }"/>
 
-            <Label Text="Comédia" Style="{ StaticResource LabelTextoVermelho }"/>
+            <Label Text="Comédia" Style="{ StaticResource LabelTextoBranco }"/>
 
             <ScrollView>
 
@@ -27,23 +27,25 @@
 
                         <RowDefinition Height="300"/>
                         <RowDefinition Height="300"/>
-                        <RowDefinition Height="300"/>
 
                     </Grid.RowDefinitions>
 
                     <ImageButton Grid.Row="0" Grid.Column="0"
                                  x:Name="btn_hotel_transilvania_04"
                                  Style="{ StaticResource ButtonPosters }"
+                                 BorderColor="#e80000"
                                  Clicked="btn_hotel_transilvania_04_Clicked"/>
 
                     <ImageButton Grid.Row="0" Grid.Column="1"
                                  x:Name="btn_metal_lords"
                                  Style="{ StaticResource ButtonPosters }"
+                                 BorderColor="#e80000"
                                  Clicked="btn_metal_lords_Clicked"/>
 
                     <ImageButton Grid.Row="1" Grid.Column="0"
                                  x:Name="btn_red_cresecer_e_uma_fera"
                                  Style="{ StaticResource ButtonPosters }"
+                                 BorderColor="#e80000"
                                  Clicked="btn_red_cresecer_e_uma_fera_Clicked"/>
 
                 </Grid>

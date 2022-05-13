@@ -58,7 +58,8 @@
 
                                 <Label Text="Título:" Style="{ StaticResource LabelTextoVermelho }"/>
 
-                                <Label Text="Hotel Transilvânia 04: " Style="{ StaticResource LabelTextoBranco }"/>
+                                <Label Text="Hotel " Style="{ StaticResource LabelTextoBranco }"/>
+                                <Label Text="Transilvânia 04: " Style="{ StaticResource LabelTextoBranco }"/>
                                 <Label Text="Transformonstrão" Style="{ StaticResource LabelTextoBranco }"/>
 
                                 <Label Text="Data de Lançamento:" Style="{ StaticResource LabelTextoVermelho }"/>

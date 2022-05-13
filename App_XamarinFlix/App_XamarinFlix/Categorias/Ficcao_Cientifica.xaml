@@ -10,7 +10,7 @@
 
             <Image x:Name="Logo" Style="{ StaticResource LogoNaListaDePosters }"/>
             
-            <Label Text="Ficção Científica" Style="{ StaticResource LabelTextoVermelho }"/>
+            <Label Text="Ficção Científica" Style="{ StaticResource LabelTextoBranco }"/>
 
             <ScrollView>
 
@@ -26,14 +26,13 @@
                     <Grid.RowDefinitions>
 
                         <RowDefinition Height="300"/>
-                        <RowDefinition Height="300"/>
-                        <RowDefinition Height="300"/>
 
                     </Grid.RowDefinitions>
 
                     <ImageButton Grid.Row="0" Grid.Column="0"
                                  x:Name="btn_o_projeto_adam"
                                  Style="{ StaticResource ButtonPosters }"
+                                 BorderColor="#e80000"
                                  Clicked="btn_o_projeto_adam_Clicked"/>
 
                 </Grid>

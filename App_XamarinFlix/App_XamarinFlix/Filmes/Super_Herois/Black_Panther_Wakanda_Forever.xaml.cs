@@ -32,9 +32,10 @@ namespace App_XamarinFlix.Filmes.Super_Herois
              Visualizador.Source = htmlSource;*/
 
             Sinopse_Filme.Text = "Black Panther: Wakanda Forever é um futuro filme estadunidense " +
-                                  "de super-herói baseado no personagem Pantera Negra da Marvel Comics. " +
-                                  "Produzido pelo Marvel Studios e distribuído pela Walt Disney Studios Motion Pictures, " +
-                                  "é a sequência de Pantera Negra e o trigésimo filme do Universo Cinematográfico Marvel.";
+                                 "de super-herói baseado no personagem Pantera Negra da Marvel Comics. " +
+                                 "Produzido pelo Marvel Studios e distribuído pela Walt Disney Studios Motion Pictures, " +
+                                 "é a sequência de Pantera Negra e o trigésimo filme do "
+                                 "Universo Cinematográfico Marvel (UCM).";
 
         }
     }

@@ -31,16 +31,22 @@
                 <Button Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"
                         Text="Super-Heróis"
                         Style="{StaticResource Button_Menu_Categorias}"
+                        BorderWidth="2"
+                        BorderColor="#FFF"
                         Clicked="btn_open_super_herois" />
 
                 <Button Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"
                         Text="Ficção Científica"
                         Style="{StaticResource Button_Menu_Categorias}"
+                        BorderWidth="2"
+                        BorderColor="#FFF"
                         Clicked="btn_open_ficcao_cientifica"/>
 
-                <Button Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" 
+                <Button Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"
                         Text="Comédia"
-                        Style="{StaticResource Button_Menu_Categorias}"                
+                        Style="{StaticResource Button_Menu_Categorias}"
+                        BorderWidth="2"
+                        BorderColor="#FFF"
                         Clicked="btn_open_comedia"/>
 
             </Grid>

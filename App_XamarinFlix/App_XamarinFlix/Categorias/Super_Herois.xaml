@@ -10,7 +10,7 @@
 
             <Image x:Name="Logo" Style="{ StaticResource LogoNaListaDePosters }"/>
             
-            <Label Text="Super Heróis" Style="{ StaticResource LabelTextoVermelho }"/>
+            <Label Text="Super Heróis" Style="{ StaticResource LabelTextoBranco }"/>
 
             <ScrollView>
 
@@ -34,26 +34,31 @@
                     <ImageButton Grid.Row="0" Grid.Column="0"
                                  x:Name="btn_black_panther_wakanda_forever"
                                  Style="{ StaticResource ButtonPosters }"
+                                 BorderColor="#e80000"
                                  Clicked="btn_black_panther_wakanda_forever_Clicked" />
 
                     <ImageButton Grid.Row="0" Grid.Column="1"
                                  x:Name="btn_doutor_estranho_02"
                                  Style="{ StaticResource ButtonPosters }"
+                                 BorderColor="#e80000"
                                  Clicked="btn_doutor_estranho_02_Clicked"/>
 
                     <ImageButton Grid.Row="1" Grid.Column="0"
                                  x:Name="btn_morbius"
                                  Style="{ StaticResource ButtonPosters }"
+                                 BorderColor="#e80000"
                                  Clicked="btn_morbius_Clicked"/>
 
                     <ImageButton Grid.Row="1" Grid.Column="1"
                                  x:Name="btn_the_batman"
                                  Style="{ StaticResource ButtonPosters }"
+                                 BorderColor="#e80000"
                                  Clicked="btn_the_batman_Clicked"/>
 
                     <ImageButton Grid.Row="2" Grid.Column="0"
                                  x:Name="btn_thor_love_and_thunder"
                                  Style="{ StaticResource ButtonPosters }"
+                                 BorderColor="#e80000"
                                  Clicked="btn_thor_love_and_thunder_Clicked"/>
 
                 </Grid>
