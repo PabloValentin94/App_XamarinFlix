@@ -32,7 +32,7 @@ namespace App_XamarinFlix.Filmes.Comedia
             Visualizador.Source = htmlSource;*/
 
             Sinopse_Filme.Text = "Uma menina de 13 anos começa a se transformar em " +
-                                 "um panda vermelho gigante sempre que fica animada.";
+                                 "um panda vermelho gigante sempre que sente emoções fortes.";
 
         }
     }
