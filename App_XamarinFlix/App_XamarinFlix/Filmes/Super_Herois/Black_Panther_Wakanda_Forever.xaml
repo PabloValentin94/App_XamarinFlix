@@ -32,6 +32,8 @@
                          VerticalOptions="FillAndExpand"
                          BackgroundColor="#2f2f30"/>
               
+                <!-- Esse filme ainda não possui trailer, e nem poster, oficial. Então não os leve muito em consideração. -->
+              
                 <StackLayout Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2">
 
                     <ScrollView>
