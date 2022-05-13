@@ -28,10 +28,10 @@
 
                 <WebView Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2"
                          x:Name="Visualizador"
-                         Source="https://www.youtube.com/embed/qZuQc-GvRlk"
+                         Source="https://www.youtube.com/embed/qZuQc-GvRlk" // Esse filme não tem um trailer, e nem um poster, oficial.
                          VerticalOptions="FillAndExpand"
                          BackgroundColor="#2f2f30"/>
-
+              
                 <StackLayout Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2">
 
                     <ScrollView>
