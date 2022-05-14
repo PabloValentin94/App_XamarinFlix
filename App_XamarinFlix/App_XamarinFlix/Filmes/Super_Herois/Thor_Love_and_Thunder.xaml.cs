@@ -35,7 +35,7 @@ namespace App_XamarinFlix.Filmes.Super_Herois
                                  "baseado no personagem Thor da Marvel Comics. Produzido pela Marvel Studios " +
                                  "e distribuído pela Walt Disney Studios Motion Pictures, " +
                                  "será a sequência direta de Thor: Ragnarok, " +
-                                 "e o vigésimo nono filme do "
+                                 "e o vigésimo nono filme do " +
                                  "Universo Cinematográfico Marvel (UCM).";
 
         }
