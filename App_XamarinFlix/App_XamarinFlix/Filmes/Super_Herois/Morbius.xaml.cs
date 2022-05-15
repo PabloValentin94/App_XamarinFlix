@@ -31,7 +31,7 @@ namespace App_XamarinFlix.Filmes.Super_Herois
 
             Visualizador.Source = htmlSource;*/
 
-            Sinopse_Filme.Text = "O bioquímico Michael Morbius tenta curar-se de uma doença rara no sangue mas, " +
+            Sinopse_Filme.Text = "O bioquímico Michael Morbius tenta curar-se de uma doença rara no sangue, mas, " +
                                  "sem perceber, ele fica infectado com uma forma de vampirismo.";
 
         }
