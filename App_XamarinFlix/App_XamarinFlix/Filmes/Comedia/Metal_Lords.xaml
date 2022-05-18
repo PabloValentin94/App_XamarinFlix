@@ -28,7 +28,7 @@
 
                 <WebView Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2"
                          x:Name="Visualizador"
-                         Source="https://www.youtube.com/embed/BZicnf4BckI"
+                         Source="https://www.youtube.com/embed/GU0FscrlFow?start=6"
                          VerticalOptions="FillAndExpand"
                          BackgroundColor="#2f2f30"/>
 
