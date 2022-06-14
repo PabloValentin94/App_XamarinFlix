@@ -10,7 +10,7 @@
 
             <Image x:Name="Logo" Style="{ StaticResource LogoNaListaDePosters }"/>
             
-            <Label Text="Super Heróis" Style="{ StaticResource LabelTextoBranco }"/>
+            <Label Text="Super-Heróis" Style="{ StaticResource LabelTextoBranco }"/>
 
             <ScrollView>
 
