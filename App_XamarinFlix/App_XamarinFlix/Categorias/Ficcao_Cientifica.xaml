@@ -35,6 +35,12 @@
                                  BorderColor="#e80000"
                                  Clicked="btn_o_projeto_adam_Clicked"/>
 
+                    <ImageButton Grid.Row="0" Grid.Column="1"
+                                 x:Name="btn_avatar_02"
+                                 Style="{ StaticResource ButtonPosters }"
+                                 BorderColor="#e80000"
+                                 Clicked="btn_avatar_02_Clicked"/>
+
                 </Grid>
 
             </ScrollView>

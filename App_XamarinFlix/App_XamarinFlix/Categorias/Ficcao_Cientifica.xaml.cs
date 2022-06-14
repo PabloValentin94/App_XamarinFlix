@@ -21,12 +21,21 @@ namespace App_XamarinFlix.Categorias
 
             btn_o_projeto_adam.Source = ImageSource.FromResource("App_XamarinFlix.Posters.O_Projeto_Adam.jpg");
 
+            btn_avatar_02.Source = ImageSource.FromResource("App_XamarinFlix.Posters.Avatar_02.jpg");
+
         }
 
         private void btn_o_projeto_adam_Clicked(object sender, EventArgs e)
         {
 
             Navigation.PushAsync(new Filmes.Ficcao_Cientifica.O_Projeto_Adam());
+
+        }
+
+        private void btn_avatar_02_Clicked(object sender, EventArgs e)
+        {
+
+            Navigation.PushAsync(new Filmes.Ficcao_Cientifica.Avatar_02());
 
         }
     }

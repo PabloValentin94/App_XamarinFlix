@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <None Remove="Imagem\Xamarin_Logo.png" />
+    <None Remove="Posters\Avatar_02.jpg" />
     <None Remove="Posters\Black_Panther_Wakanda_Forever.jpg" />
     <None Remove="Posters\Doutor_Estranho_02.jpg" />
     <None Remove="Posters\Hotel_Transilvania_04.jpg" />
@@ -25,6 +26,9 @@
 
   <ItemGroup>
     <EmbeddedResource Include="Imagem\Xamarin_Logo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Posters\Avatar_02.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Posters\Black_Panther_Wakanda_Forever.jpg">
@@ -87,6 +91,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Filmes\Comedia\Red_Crescer_e_Uma_Fera.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Filmes\Ficcao_Cientifica\Avatar_02.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Filmes\Ficcao_Cientifica\O_Projeto_Adam.xaml">
