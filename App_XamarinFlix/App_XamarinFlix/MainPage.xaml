@@ -6,12 +6,19 @@
              BackgroundColor="#2f2f30">
 
     <StackLayout>
+        
+        <!-- Aqui estamos instaciando uma imagem que ficará no topo da página, servindo como uma logo do aplicativo, dai surge seu x:Name -->
 
         <Image x:Name="Logo" HeightRequest="150"/>
 
         <ScrollView>
+            
+            <!-- O Grid.RowSpacing define o espaço entre as linhas da Grid, e o Grid.ColumnSpacing, entre as colunas, respectivamente.
+                 O Padding representa a distância interna entre os elementos da Grid.  -->
 
             <Grid RowSpacing="20" ColumnSpacing="10" Padding="10">
+                
+                <!-- Definindo a quantidade de colunas da Grid. -->
 
                 <Grid.ColumnDefinitions>
 
@@ -20,6 +27,8 @@
 
                 </Grid.ColumnDefinitions>
 
+                <!-- Definindo a quantidade de linhas da Grid. -->
+
                 <Grid.RowDefinitions>
 
                     <RowDefinition Height="50"/>
@@ -27,6 +36,8 @@
                     <RowDefinition Height="50"/>
 
                 </Grid.RowDefinitions>
+                
+                <!-- Definindo os botões da Página Inicial do Aplicativo. -->
 
                 <Button Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"
                         Text="Super-Heróis"
@@ -48,6 +59,21 @@
                         BorderWidth="2"
                         BorderColor="#FFF"
                         Clicked="btn_open_comedia"/>
+                
+                <!-- 
+                
+                    Glossário:
+                
+                        Grid.Row = especifica a linha da Grid que iremos usar. 
+                        Grid.Column = especifica a coluna da Grid que iremos usar. 
+                        Text = define uma mensagem, que será exibida dentro do elemento em que é especificado. 
+                        BorderWidht = define o tamanho da borda do elemento. 
+                        BorderColor = define a cor da borda do elemento. 
+                        Clicked = esse elemento é responsável por específicar ao arquivo .xaml que, 
+                        quando o usuário clicar no botão em questão, ele deverá se redirecionar ao arquivo .cs (c#), onde estará
+                        especificado o que a página deve fazer após o botão ser clicado.
+                
+                -->
 
             </Grid>
 
