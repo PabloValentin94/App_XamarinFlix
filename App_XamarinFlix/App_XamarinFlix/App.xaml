@@ -48,12 +48,14 @@
         <Style x:Key="LogoNaListaDePosters" TargetType="Image">
 
             <Setter Property="HeightRequest" Value="80"/>
+            <Setter Property="Margin" Value="10"/>
 
         </Style>
 
         <Style x:Key="LogoNoFilme" TargetType="Image">
 
             <Setter Property="HeightRequest" Value="50"/>
+            <Setter Property="Margin" Value="10"/>
 
         </Style>
 

@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
+using App_XamarinFlix.Filmes.Super_Herois; // Ao usarmos o using não precisamos especificar o caminho completo dos arquivos de filmes.
+
 namespace App_XamarinFlix.Categorias
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
@@ -17,7 +19,15 @@ namespace App_XamarinFlix.Categorias
 
             InitializeComponent();
 
+            // Imagem da logo do aplicativo:
+
             Logo.Source = ImageSource.FromResource("App_XamarinFlix.Imagem.Xamarin_Logo.png");
+
+            // Removendo a barra de navegação do aplicativo:
+
+            NavigationPage.SetHasNavigationBar(this, false);
+
+            // Imagens dos posteres:
 
             btn_black_panther_wakanda_forever.Source = ImageSource.FromResource("App_XamarinFlix.Posters.Black_Panther_Wakanda_Forever.jpg");
 
@@ -31,37 +41,93 @@ namespace App_XamarinFlix.Categorias
 
         }
 
-        private void btn_black_panther_wakanda_forever_Clicked(object sender, EventArgs e)
+        private async void btn_black_panther_wakanda_forever_Clicked(object sender, EventArgs e)
         {
             
-            Navigation.PushAsync(new Filmes.Super_Herois.Black_Panther_Wakanda_Forever());
+            try
+            {
+
+                await Navigation.PushAsync(new Black_Panther_Wakanda_Forever());
+
+            }
+            catch(Exception ex)
+            {
+
+                await DisplayAlert("Erro Detectado!", ex.Message, "OK");
+
+            }
 
         }
 
-        private void btn_doutor_estranho_02_Clicked(object sender, EventArgs e)
+        private async void btn_doutor_estranho_02_Clicked(object sender, EventArgs e)
         {
 
-            Navigation.PushAsync(new Filmes.Super_Herois.Doutor_Estranho_02());
+            try
+            {
+
+                await Navigation.PushAsync(new Doutor_Estranho_02());
+            
+            }
+            catch (Exception ex)
+            {
+
+                await DisplayAlert("Erro Detectado!", ex.Message, "OK");
+            
+            }
 
         }
 
-        private void btn_morbius_Clicked(object sender, EventArgs e)
+        private async void btn_morbius_Clicked(object sender, EventArgs e)
         {
 
-            Navigation.PushAsync(new Filmes.Super_Herois.Morbius());
+            try
+            {
+
+                await Navigation.PushAsync(new Morbius());
+            
+            }
+            catch (Exception ex)
+            {
+
+                await DisplayAlert("Erro Detectado!", ex.Message, "OK");
+            
+            }
+
         }
 
-        private void btn_the_batman_Clicked(object sender, EventArgs e)
+        private async void btn_the_batman_Clicked(object sender, EventArgs e)
         {
 
-            Navigation.PushAsync(new Filmes.Super_Herois.The_Batman());
+            try
+            {
+
+                await Navigation.PushAsync(new The_Batman());
+            
+            }
+            catch (Exception ex)
+            {
+
+                await DisplayAlert("Erro Detectado!", ex.Message, "OK");
+            
+            }
 
         }
 
-        private void btn_thor_love_and_thunder_Clicked(object sender, EventArgs e)
+        private async void btn_thor_love_and_thunder_Clicked(object sender, EventArgs e)
         {
 
-            Navigation.PushAsync(new Filmes.Super_Herois.Thor_Love_and_Thunder());
+            try
+            {
+
+                await Navigation.PushAsync(new Thor_Love_and_Thunder());
+
+            }
+            catch (Exception ex)
+            {
+
+                await DisplayAlert("Erro Detectado!", ex.Message, "OK");
+            
+            }
 
         }
     }

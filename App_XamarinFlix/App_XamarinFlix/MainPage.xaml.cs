@@ -6,6 +6,8 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
+using App_XamarinFlix.Categorias; // Ao usarmos o using não precisamos especificar o caminho completo dos arquivos de categorias de filmes.
+
 namespace App_XamarinFlix
 {
     public partial class MainPage : ContentPage
@@ -15,7 +17,11 @@ namespace App_XamarinFlix
 
             InitializeComponent();
 
+            // Imagem da logo do aplicativo:
+
             Logo.Source = ImageSource.FromResource("App_XamarinFlix.Imagem.Xamarin_Logo.png");
+
+            // Removendo a barra de navegação do aplicativo:
 
             NavigationPage.SetHasNavigationBar(this, false);
 
@@ -26,11 +32,15 @@ namespace App_XamarinFlix
 
             try
             {
-                await Navigation.PushAsync(new Categorias.Super_Herois());
+
+                await Navigation.PushAsync(new Super_Herois());
+            
             }
             catch (Exception ex)
             {
+
                 await DisplayAlert("Erro Detectado!", ex.Message, "Ok");
+            
             }
 
         }
@@ -40,11 +50,15 @@ namespace App_XamarinFlix
 
             try
             {
-                await Navigation.PushAsync(new Categorias.Ficcao_Cientifica());
+
+                await Navigation.PushAsync(new Ficcao_Cientifica());
+            
             }
             catch (Exception ex)
             {
+
                 await DisplayAlert("Erro Detectado!", ex.Message, "Ok");
+            
             }
 
         }
@@ -54,11 +68,15 @@ namespace App_XamarinFlix
 
             try
             {
-                await Navigation.PushAsync(new Categorias.Comedia());
+
+                await Navigation.PushAsync(new Comedia());
+            
             }
             catch (Exception ex)
             {
+
                 await DisplayAlert("Erro Detectado!", ex.Message, "Ok");
+            
             }
             
         }

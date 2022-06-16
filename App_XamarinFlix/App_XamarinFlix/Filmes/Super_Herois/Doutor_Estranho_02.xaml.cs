@@ -17,7 +17,15 @@ namespace App_XamarinFlix.Filmes.Super_Herois
 
             InitializeComponent();
 
+            // Imagem da logo do aplicativo:
+
             Logo.Source = ImageSource.FromResource("App_XamarinFlix.Imagem.Xamarin_Logo.png");
+
+            // Removendo a barra de navegação do aplicativo:
+
+            NavigationPage.SetHasNavigationBar(this, false);
+
+            // Especificando o caminho do poster do filme:
 
             Poster.Source = ImageSource.FromResource("App_XamarinFlix.Posters.Doutor_Estranho_02.jpg");
 

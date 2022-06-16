@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
+using App_XamarinFlix.Filmes.Comedia; // Ao usarmos o using não precisamos especificar o caminho completo dos arquivos de filmes.
+
 namespace App_XamarinFlix.Categorias
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
@@ -17,7 +19,15 @@ namespace App_XamarinFlix.Categorias
 
             InitializeComponent();
 
+            // Imagem da logo do aplicativo:
+
             Logo.Source = ImageSource.FromResource("App_XamarinFlix.Imagem.Xamarin_Logo.png");
+
+            // Removendo a barra de navegação do aplicativo:
+
+            NavigationPage.SetHasNavigationBar(this, false);
+
+            // Imagens dos posteres:
 
             btn_hotel_transilvania_04.Source = ImageSource.FromResource("App_XamarinFlix.Posters.Hotel_Transilvania_04.jpg");
 
@@ -32,11 +42,15 @@ namespace App_XamarinFlix.Categorias
 
             try
             {
-                await Navigation.PushAsync(new Filmes.Comedia.Hotel_Transilvania_04());
+
+                await Navigation.PushAsync(new Hotel_Transilvania_04());
+            
             }
             catch (Exception ex)
             {
-                await DisplayAlert("Erro Detectado!", ex.Message, "Ok");
+
+                await DisplayAlert("Erro Detectado!", ex.Message, "OK");
+            
             }
           
         }
@@ -46,11 +60,15 @@ namespace App_XamarinFlix.Categorias
 
             try
             {
-                await Navigation.PushAsync(new Filmes.Comedia.Metal_Lords());
+
+                await Navigation.PushAsync(new Metal_Lords());
+            
             }
             catch (Exception ex)
             {
-                await DisplayAlert("Erro Detectado!", ex.Message, "Ok");
+
+                await DisplayAlert("Erro Detectado!", ex.Message, "OK");
+            
             }
 
         }
@@ -60,11 +78,15 @@ namespace App_XamarinFlix.Categorias
 
             try
             {
-                await Navigation.PushAsync(new Filmes.Comedia.Red_Crescer_E_Uma_Fera());
+
+                await Navigation.PushAsync(new Red_Crescer_E_Uma_Fera());
+            
             }
             catch (Exception ex)
             {
-                await DisplayAlert("Erro Detectado!", ex.Message, "Ok");
+
+                await DisplayAlert("Erro Detectado!", ex.Message, "OK");
+            
             }
 
         }

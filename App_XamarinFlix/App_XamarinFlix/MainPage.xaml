@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App_XamarinFlix.MainPage"
-             Title=" Etec App Xamarin_Flix"
+             Title="Xamarin Flix"
              BackgroundColor="#2f2f30">
 
     <StackLayout>
@@ -37,7 +37,7 @@
 
                 </Grid.RowDefinitions>
                 
-                <!-- Definindo os botões da Página Inicial do Aplicativo. -->
+                <!-- Definindo os botões da Página Inicial do aplicativo. -->
 
                 <Button Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"
                         Text="Super-Heróis"
