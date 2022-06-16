@@ -38,7 +38,7 @@
 
                     <ScrollView>
 
-                        <Grid Padding="0">
+                        <Grid>
 
                             <Grid.ColumnDefinitions>
 
